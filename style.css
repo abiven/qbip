@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #FFFFFF; 
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  color: black;
+}
+/*******************************************petitenfant-tous les blocks*********************************************/
+.petitenfant{
+    height: 135vh;
+    width: 40vw;/*plus toucher*/
+    margin:5px;
+    padding: ;
+    background-color:floralwhite;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+
+/**********************block/cadre du boutonn-switch vert*********************************************************/
+.boutonn{
+height: 25px;/*hauteur*/
+width: 60px;/*largeur*/
+flex-direction: row-reverse;
+padding:10px;
+margin-top: auto;
+margin-left :auto; /* Permet de centrer au milieu de la page */
+margin-right :auto ;/* Permet de centrer au milieu de la page */
+margin-bottom:auto;
+}
+/*******************************************espace commentaire*******************************************************/
+label {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+}
+
+select {
+    font-size: .9rem;
+    padding: 2px 5px;
+}
+/*titre de la page*/
+#title>h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-top: 0;
+  letter-spacing: .3rem;
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  color: plum;
+  margin-left :240px; 
+  margin-right :auto ;/* Permet de centrer au milieu de la page */
+}
+
+.ml12 {
+  font-weight: 200;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  color: black;
+  font-weight:bolder;  
+  margin-left :390px; 
+  margin-right :auto ;/* Permet de centrer au milieu de la page */  
+}
+
+.ml12 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+/******************************************Parent des blocks senarios resultat**************************************/
+#grandparentblock{
+  height: 720vh;
+  width:  100vw;
+  font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+  font-weight:;
+ 
+  color:black;
+  flex-direction: row;
+  display: block;
+  margin: 2px;
+  padding: 1px;
+  background-color: ghostwhite;
+}
+
+/******************************************Block1 formulaire option************************************************/
+#parentblock1{  
+  height:250vh;
+    width:92vw;
+    margin-left :auto; /* Permet de centrer au milieu de la page */
+    margin-right :auto ;/* Permet de centrer au milieu de la page */
+    padding:1.1vh;  
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-size:20px;
+    color: black; 
+}
+/******************************************************Block enfant**************************************************/
+#enfant{
+    height:138vh;
+    width:90vw;
+    padding:vh;
+    margin:px;
+    background-color:transparent;
+    display: flex;
+    flex-direction: row;
+    margin-left :auto; /* Permet de centrer au milieu de la page */
+    margin-right :auto ;/* Permet de centrer au milieu de la page */
+    margin-bottom: auto;
+    margin-top: auto;
+    background-color: whitesmoke;
+}
+
+/************************************Block1et2 formulaires options et container*************************************/
+
+/**************************boutton switch - the box around the slider le contenu*************************************/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;/*largeur*/
+  height: 24px;
+}
+
+/****************************************default HTML checkbox*************************************************/
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/***************************************ronds********************************************************************/
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+/****************************************taille du rond switch*******************************************************/
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #00FF00;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #00FF00;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/***********************************************Ronds glissant******************************************************/
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/*block site*/
+
+.site{
+    
+}
+/***********************rectangle bleu avec choix*****************************/
+
+.msg{
+    margin-top: 10px;
+    padding: 10px;
+    display: none;
+    color: black;
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-size:10px;
+    }
+.blue{
+    background-color:darkgray;
+    border-radius: 10px;
+    }
+/***********************ligne/texte des blocks border:0.5px solid #9932CC;******************************/
+.ligne{
+height: 60px;
+width: 350px;
+font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+font-size:15px;
+margin-right: right;
+background-color:transparent;
+display: flex;
+justify-content: flex-start; 
+border-radius: 10px;
+padding-bottom:2px;
+padding-left:4px ;/*marge intérieur gauche*/
+padding-top:px ;/*marge intérieur en haut*/
+margin-bottom:px;
+margin-left :auto; /* Permet de centrer au milieu de la page */
+margin-right :auto ;/* Permet de centrer au milieu de la page */
+}  
+
+/***************************************************text***************************************************************/
+.text{
+height:;
+width:230px;
+color:#000000;
+font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+font-size:15px;
+flex-direction: row;
+padding-top : 18px;
+padding-right : 10px;
+padding-bottom : 3px;
+padding-left : 7px;
+  
+}
+/******************************soustitre***************************************/
+.soustitre{
+color:#000000;
+font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+font-size:20px;
+font-weight:bolder;
+flex-direction: row;
+padding-top : 18px;
+padding-right : 10px;
+padding-bottom : 3px;
+padding-left : 7px;    
+}
+/*bouton*/
+#boutonformulaire{
+height:40px;
+width:150px;    
+background-color: aquamarine;   
+border-radius: 10px;
+box-shadow: 5px 5px 5px black;    
+}
+
+
+/*****************************************block2 résultat provisoire************************************************/
+#parentblock2{
+    height:100vh;
+    width:89vw;
+    margin-left :auto; /* Permet de centrer au milieu de la page */
+    margin-right :auto ;/* Permet de centrer au milieu de la page */
+    padding:1.1vh;
+    background-color:whitesmoke;  
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-size:20px;    
+    color: black; 
+    padding: 1vh;
+    
+}
+/**/
+/*********************************************************footer************************************************************/
+.footerr{
+    width: 90vw; 
+    background-color:antiquewhite;  
+    font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-size:20px;
+    color: black; 
+}

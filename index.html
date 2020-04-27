@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Qbip votre sénario</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <!--<script type="text/javascript" src="script.js"></script>-->
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('input[type="radio"]').click(function(){
+          var val = $(this).attr("value");
+          var target = $("." + val);
+          $(".msg").not(target).hide();
+          $(target).show();
+        });
+      });
+      $(document).ready(function(){
+        $('input[type="checkbox"]').click(function(){
+          var val = $(this).attr("value");
+          var target = $("." + val);
+          $(".msg").not(target).hide();
+          $(target).show();
+        });
+      });
+    </script>
+    
+<h1 class="ml12">Votre sénario!</h1>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script>
+// Wrap every letter in a span
+var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+    </script>
+    
+</head>
+<body>          
+        
+<!--""""""""""""""""""""""""""""""""""""""""""""""""grand Parents des blocks"""""""""""""""""""""""""""""""""""""""""--> 
+<div id="grandparentblock">
+   
+    
+    <div id="title"></div>
+<!--"""""""""""""""""""""""""""""""""""""""Comprends 2 blocks senario et resulat""""""""""""""""""""""""""""""""-->    
+    <div id="parentblock1" >       
+    
+ <!--""""""""""" """""""""""""""""""""""""""Offres Qbip BlockA et parentblock 1et et block enfant """"""""""""""""--> 
+<div id="enfant">
+   
+        <div class="petitenfant">
+    <div class="ligne"><p class="soustitre">Pack type de service</p></div>    
+        <div class="ligne"><div class="text"><p>Appli+Web+Achat du materials de bipage</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Appli+Web+Achat du materials de bipage</div>
+          
+        <div class="ligne"><div class="text"><p>Appli+Achat du materials de bipage</p></div><div class="boutonn"><div><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div></div>
+    <div class="blue msg">Appli+Achat du materials de bipage</div>
+    
+    <div class="ligne"><div class="text"><p>Appli+Location du material de bipage</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue"> 
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Appli+Location du material de bipage</div>
+    
+    <div class="ligne"><div class="text"><p>web+Achat du material de bipage</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue"> 
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">web+Achat du material de bipage</div>
+    
+    <div class="ligne"><div class="text"><p>Web+Location du material de bipage</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue"> 
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Web+Location du material de bipage</div>
+</div> 
+<!--""""""""""""""""""""""""""""""""""""""""""pack admin blockB """"""""""""""""""""""""""""""""""""""""""""""""""""""" -->   
+<div class="petitenfant">   
+    <div class="ligne"><p class="soustitre">Pack Admin</p></div>      
+        <div class="ligne"><div class="text"><p>Historique utilisateur</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Historique utilisateur</div>
+        
+    <div class="ligne"><div class="text"><p>Gestion des retards</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Gestion des retards</div>
+        
+    
+    <div class="ligne"><div class="text"><p>Limite de scan</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">Limite de scan</div>
+        
+        
+    <div class="ligne"><div class="text"><p>#</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox" name="ba" value="blue">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">#</div>
+        
+        
+    <div class="ligne"><div class="text"><p>#</p></div><div class="boutonn"><label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+        </label></div></div>
+    <div class="blue msg">#</div>
+    </div>
+
+<!--""""""""""""""""""""""""""""""""""""""""""Pack Utilisateur block c"""""""""""""""""""""""""""""""""""""""""""""""-->
+<div class="petitenfant">
+ <div class="ligne"><p class="soustitre">Pack utilisateur</p></div>   
+   <div class="ligne"><div class="text"><p>Historique</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Historique</div>
+        
+    <div class="ligne"><div class="text"><p>Nombre de scan</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Nombre de scan</div>
+    
+    <div class="ligne"><div class="text"><p>Heures suplémentaires</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Heures suplémentaires</div>
+    
+    <div class="ligne"><div class="text"><p>Retard</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Retard</div>
+    
+    <div class="ligne"><div class="text"><p>Agenda</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Agenda</div>
+    
+    <div class="ligne"><div class="text"><p>Alerte</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Alerte</div>
+    
+    <div class="ligne"><div class="text"><p>Saisie utilisateur</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Saisie utilisateur</div>
+    
+     <div class="ligne"><div class="text"><p>Lieu du scan</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Lieu du scan</div>
+    </div>
+    
+</div>
+<!--"""""""""""""""""""""""""""""""""""pack reservation block d et block enfant 2""""""""""""""""""""""""""""""""""""""""""-->
+<div id="enfant">
+        
+<div class="petitenfant">
+    <div class="ligne"><p class="soustitre">Pack réservation</p></div>
+    <div class="ligne"><div class="text"><p>Réservation Matériels</p></div><div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div></div>
+    <div class="blue msg">Réservation Matériels</div>
+            
+    <div class="ligne"><div class="text"><p>Stock</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Stock</div>
+        
+    <div class="ligne"><div class="text"><p>Réservation voiture</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Réservation voiture</div>
+        
+    <div class="ligne"><div class="text"><p>Diponibilité</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Diponibilité</div>
+    
+    <div class="ligne"><div class="text"><p>Réservation téléphone</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Réservation téléphone</div>       
+</div>
+    
+<!--""""""""""""""""""""""""""""""""""""""""Pack Suivi d'Objet block e"""""""""""""""""""""""""""""""""""""""""""""""-->
+<div class="petitenfant">
+    <div class="ligne"><p class="soustitre">Pack Suivi Livraison Objet</p></div>    
+    <div class="ligne"><div class="text"><p>Histoirique objet</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Histoirique objet</div>
+        
+    <div class="ligne"><div class="text"><p>Réception Début Fin</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Réception Début Fin</div>
+    
+    <div class="ligne"><div class="text"><p>Signature de réception</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue"> 
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Signature de réception</div>
+        
+    <div class="ligne"><div class="text"><p>Température objet</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Température objet</div>
+    
+    <div class="ligne"><div class="text"><p>Temps de trajet colis</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Temps de trajet colis</div>
+        
+    <div class="ligne"><div class="text"><p>Notification alerte objet</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div>
+    <div class="blue msg">Notification alerte objet</div>
+</div>
+</div>
+<!--"""""""""""""""""""""""""""""""""""""""Pack Publicité blockf""""""""""""""""""""""""""""""""""""""""""""""""""-->
+
+<div class="petitenfant">
+<div class="ligne"><p class="soustitre">Pack Publicité</p></div>
+    <div class="ligne"><div class="text"><p>Actualité Entreprise en Direct</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Actualité Entreprise en Direct</div>
+    
+    <div class="ligne"><div class="text"><p>Site Web Sans Publicité</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Site Web Sans Publicité</div>
+        
+    <div class="ligne"><div class="text"><p>site web avec publicité</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">site web avec publicité</div> 
+    
+    <div class="ligne"><div class="text"><p>Appli Sans Pub</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Appli Sans Pub</div>
+        
+    <div class="ligne"><div class="text"><p>Appli avec Pub</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Appli avec Pub</div>  
+    </div>
+
+</div>
+<!--""""""""""""""""""""""""""""""""""""""""""Pack CE block g et block enfant 3"""""""""""""""""""""""""""""""""""""""""""-->
+<div id="enfant">
+     
+<div class="petitenfant">
+    <div class="ligne"><p class="soustitre">Pack CE</p></div>
+    <div class="ligne"><div class="text"><p>Pack fidélité</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Pack fidélité</div> 
+        
+    <div class="ligne"><div class="text"><p>Chèque Vacances</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Chèque Vacances</div> 
+    
+    <div class="ligne"><div class="text"><p>Chèque Restaurant</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox"name="ba" value="blue">
+    <span class="slider round"></span>
+    </label></div></div>
+    <div class="blue msg">Chèque Restaurant</div> 
+<!--boutonspé-->
+    <div class="ligne"><div class="text"><p>blabla</p></div><div class="boutonn"><label class="switch">
+    <input type="checkbox" name="ba" value="blue">
+    <span class="slider round"></span>
+    </label>
+    <div class="blue msg">vous avez sélectionné le bleu</div>
+    </div>
+</div>
+</div>
+<!--bouton d'envoie du formulaire votre senario-->
+    <div id="boutonformulaire">
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </div>
+</div>
+     <div id="parentblock2"><h2>Des idées de sénarios! Exprimé-vous!</h2></div>
+</div>
+<!--pied de page-->        
+<div class="footerr"><footer>Copryth le 23 Février 2020 RENNES</footer></div>
+</div>
+</body>
+
+</html>
+
+
+
